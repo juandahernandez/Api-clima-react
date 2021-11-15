@@ -1,0 +1,63 @@
+.card-info-city {
+  margin: auto;
+  width: 40%;
+  font-size: 25px;
+  font-weight: 300;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.8),
+    0 0 50px rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  border-radius: 5%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card-info-city p {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.card-info-city button {
+  margin-top: 20px;
+  padding: 0 10px;
+  font-weight: 200;
+  font-size: 25px;
+  color: black;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  border: 2px solid rgba(4, 65, 179, 0.287);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+@media (max-width: 639px) {
+  .card-info-city {
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .card-info-city p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .card-info-city button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-info-city {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .card-info-city p {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}

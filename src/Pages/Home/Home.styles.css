@@ -1,0 +1,17 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://w0.peakpx.com/wallpaper/538/675/HD-wallpaper-starry-sky-bench-lantern-stars-night-art.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.error404 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
