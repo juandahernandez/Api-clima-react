@@ -13,18 +13,12 @@ const Home = () => {
   const [cityInfor, setCityInfor] = useState();
   const [loader, setLoader] = useState(false);
   const [errorInput, setErrorInput] = useState(false);
-  const [valueInput] = useState(null);
   const [cityName, setCityName] = useState("");
 
   // funciones
 
-  const buscarCiudad = ({ value }) => {
-    setCityName(value);
-  };
-
   const buscarClima = async (e) => {
     e.preventDefault();
-    setCityName(valueInput);
     if (!cityName) {
       setErrorInput(true);
       setCityInfor(null);
@@ -35,6 +29,7 @@ const Home = () => {
       const result = await response.json();
       setCityInfor(result);
       setLoader(false);
+      setCityName("");
     }
   };
 
@@ -43,10 +38,14 @@ const Home = () => {
       {!loader && (
         <div className="background">
           <WeatherForm
-            buscarCiudad={buscarCiudad}
+            // buscarCiudad={buscarCiudad}
             cityName={cityName}
             buscarClima={buscarClima}
             errorInput={errorInput}
+            // valueInput={valueInput}
+            valueInput={cityName}
+            setValueInput={setCityName}
+            // setValueInput={setValueInput}
           />
           {cityInfor ? (
             cityInfor.cod === "404" ? (
